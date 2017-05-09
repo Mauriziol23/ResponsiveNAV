@@ -1,0 +1,92 @@
+@import "https://fonts.googleapis.com/css?family=Open+Sans";
+
+header {
+  background:black;
+  width: 100%;
+  height: 76px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  border-radius: 5px solid white;
+
+}
+
+ul {
+  list-style: none; /*this deletes the bullets */
+}
+
+li {
+
+  float: left;
+  color: white;
+  padding: 10px;
+}
+
+li a {
+  color: white;
+  text-decoration: none; /* this deletes the underline */
+  font-weight: bold;
+}
+
+li a:hover {
+
+  text-decoration: underline;
+
+}
+
+#logo {
+  margin: 20px;
+  float: left;
+  width: 200px;
+  height: 50px;
+  display: block;
+}
+
+
+nav {
+  float: right;
+  padding: 20px;
+  font-family: sans-serif;
+}
+
+# menu-icon {
+  background: url(images/menu-icon.JPG);
+  display: hidden;
+  width: 32px;
+  height: 32px;
+}
+
+
+/*MEDIA QUERY*/
+@media only screen and (max-width : 640px) {
+
+ header {
+ position: absolute;
+ }
+
+ #menu-icon {
+ display:inline-block;
+ }
+
+ nav ul, nav:active ul {
+ display: none;
+ position: absolute;
+ padding: 20px;
+ background: #c5c5c5;
+ right: 10px;
+ top: 65px;
+ width: 35%;
+ }
+
+ nav:hover ul {
+ display: block;
+ }
+
+ nav li {
+ text-align: center;
+ width: 100%;
+ padding: 15px 0;
+ margin: 0;
+ }
+}
